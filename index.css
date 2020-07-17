@@ -1,0 +1,52 @@
+:root {
+  --bg-color: #2d2d2d;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+h1,
+.support-notice {
+  color: #fff;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.chart::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+}
+
+form {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+form > *:not(:last-child) {
+  margin-bottom: 15px;
+}

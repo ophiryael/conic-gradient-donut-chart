@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut Chart</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <span class="support-notice">conic-gradient() is NOT supported at the moment in Firefox/IE</span>
+    <h1>Conic Gradient Donut Chart</h1>
+    <div class="chart"></div>
+    <form>
+      <span>* Should amount to 100%</span>
+      <label>
+        Slice percentage:
+        <input type="number" name="slice-pct" min="1" max="100" /> %
+      </label>
+      <label>
+        Slice percentage:
+        <input type="number" name="slice-pct" min="1" max="100" /> %
+      </label>
+      <button type="button" class="add-slice-btn">Add Slice</button>
+      <button type="submit">Render</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
